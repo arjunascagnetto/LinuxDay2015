@@ -1,3 +1,17 @@
+# Download Apache Spark in /opt
+# Download Apache Hadoop in /opt
+# Download Java JDK 7 in /opt
+
+# Uncompress the files
+
+# Make Static Symbolic Links 
+
+ln -s /opt/spark-dir /usr/local/spark
+ln -s /opt/hadoop-dir /usr/local/hadoop
+ln -s /opt/jdk-dir /usr/local/java
+
+# Add these lines at the end of /etc/profile
+
 export JAVA_HOME=/usr/local/java
 
 #HADOOP VARIABLES START
@@ -21,3 +35,5 @@ export PYTHONPATH=/usr/local/spark/python:/usr/local/spark/python/lib/py4j-0.8.2
 export PATH=$PATH:$SPARK_HOME/bin
 export PATH=$PATH:$SPARK_HOME/sbin
 #SPARK AND HADOOP BINARIES END
+
+# Enjoy Apache Spark and Apache Hadoop
