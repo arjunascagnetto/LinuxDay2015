@@ -36,4 +36,7 @@ export PATH=$PATH:$SPARK_HOME/bin
 export PATH=$PATH:$SPARK_HOME/sbin
 #SPARK AND HADOOP BINARIES END
 
+
+# Go to https://hadoop.apache.org/docs/r2.6.1/hadoop-project-dist/hadoop-common/SingleCluster.html#Pseudo-Distributed_Operation
+# copy the file's configuration and
 # Enjoy Apache Spark and Apache Hadoop
